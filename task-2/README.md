@@ -37,12 +37,12 @@ It demonstrates intermediate skills in HTML, CSS, and JavaScript including form 
 ---
 
 ## 📂 Project Structure
+
 Task-2/
-│
-├── index.html # Registration Form
-├── todo.html # To-Do List
-├── style.css # Styling
-├── script.js # Logic
+├── index.html      # Registration Form  
+├── todo.html       # To-Do List  
+├── style.css       # Styling  
+└── script.js       # JavaScript Logic
 
 
 ---
