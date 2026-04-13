@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SAME HEADER STYLE -->
+<header class="hero">
+    <h1>Task Manager</h1>
+    <p>Organize your daily tasks efficiently</p>
+</header>
+
+<!-- CARD -->
+<div class="container">
+    
+    <div class="todo-card"><br>
+        <br>
+        <h2>Manage Your Tasks</h2>
+
+        <div class="todo-input">
+            <input type="text" id="taskInput" placeholder="Enter task">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <a href="index.html" class="link-btn">← Back to Form</a>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
