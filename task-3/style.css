@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Background */
+  body {
+    background: linear-gradient(135deg, #475389, #c9ace7);
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    color: white;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  /* Cards */
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  /* Input */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #2f8d46;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #256e38;
+  }
+  
+  .primary {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Category */
+  .title {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .category-grid {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Cards */
+  .category-card {
+    padding: 25px;
+    border-radius: 15px;
+    width: 150px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  /* Colors */
+  .html {
+    background: linear-gradient(135deg, #d68f7e, #efb88e);
+  }
+  
+  .css {
+    background: linear-gradient(135deg, #7cf5cf, #6daeef);
+  }
+  
+  .js {
+    background: linear-gradient(135deg, #ddb17c, #f9de65);
+  }
+  
+  /* Quiz */
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    height: 6px;
+    background: #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  #bar {
+    height: 100%;
+    width: 0%;
+    background: #2f8d46;
+  }
+  
+  /* Options */
+  #options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .option {
+    padding: 10px;
+    border: 1px solid #1c1c1c;
+    border-radius: 8px;
+    background: rgb(243, 246, 244);
+    cursor: pointer;
+    color:black;
+  }
+  
+  /* Result buttons */
+  .btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  /* Leaderboard */
+  ul {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Hidden */
+  .hidden {
+    display: none;
+  }
+  /* User section */
+.user-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  /* Logout button */
+  #logoutBtn {
+    background: #ff4d4d;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  
+  #logoutBtn:hover {
+    background: #cc0000;
+  }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h2> Quiz Portal</h2>
+  
+    <div class="user-box">
+      <span id="userDisplay"></span>
+      <button id="logoutBtn" onclick="logout()" class="hidden">Logout</button>
+    </div>
+  </div>
+
+<div class="container">
+
+  <!--  LOGIN -->
+  <div id="loginBox" class="card center">
+    <h2>Welcome </h2>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="login()">Start Quiz</button>
+  </div>
+
+  <!--  CATEGORY -->
+  <div id="categoryBox" class="hidden">
+    <h2 class="title">Select Category</h2>
+
+    <div class="category-grid">
+
+      <div class="category-card html" onclick="startQuiz('html')">
+        <h3>HTML</h3>
+        <p>Structure of web pages</p>
+      </div>
+
+      <div class="category-card css" onclick="startQuiz('css')">
+        <h3>CSS</h3>
+        <p>Styling & layouts</p>
+      </div>
+
+      <div class="category-card js" onclick="startQuiz('js')">
+        <h3>JavaScript</h3>
+        <p>Logic & interactivity</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!--  QUIZ -->
+  <div id="quizBox" class="card hidden">
+    <div class="top">
+      <span id="progress"></span>
+      <span id="timer"></span>
+    </div>
+
+    <div class="progress-bar">
+      <div id="bar"></div>
+    </div>
+
+    <h3 id="question"></h3>
+    <div id="options"></div>
+
+    <button class="primary" onclick="nextQuestion()">Next</button>
+  </div>
+
+  <!-- RESULT -->
+  <div id="resultBox" class="card hidden center">
+    <h2 id="finalScore"></h2>
+
+    <div class="btn-group">
+      <button onclick="showLeaderboard()">Leaderboard</button>
+      <button onclick="restart()">Play Again</button>
+    </div>
+  </div>
+
+  <!-- LEADERBOARD -->
+  <div id="leaderboardBox" class="card hidden">
+    <h2> Leaderboard</h2>
+    <ul id="leaderboard"></ul>
+    <button onclick="restart()">Back</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
