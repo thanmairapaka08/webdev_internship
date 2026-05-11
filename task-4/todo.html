@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <h1 class="logo">To-Do App</h1>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="todo.html">To-Do</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- To-Do Section -->
+
+    <section class="section">
+
+        <h2>To-Do List</h2>
+
+
+        <div class="todo-container">
+
+            <div class="todo-box">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task"
+                >
+
+                <button onclick="addTask()">
+                    Add Task
+                </button>
+
+            </div>
+
+
+            <ul id="taskList"></ul>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 To-Do Application
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
